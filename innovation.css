@@ -1,0 +1,374 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Navigation Bar*/
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 200px 0px 250px;
+}
+
+
+.header img {
+    height: 3em;
+    margin-right: 700px;
+    cursor: pointer;
+}
+
+.choose {
+    display: flex;
+    flex-direction: row;
+    color: rgb(25, 25, 94);
+    list-style-type: none;
+    cursor: pointer;
+    margin-left: 100px;
+}
+
+.choose li {
+    font-size: 15px;
+    cursor: pointer;
+    padding-right: 40px;
+}
+
+/*Bg*/
+.backgroundContainer {
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.bg-img img {
+    width: 80%; 
+    height: auto;
+    margin: 0px 0px 0px 150px;
+}
+
+.bg-textOverlay {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    transform: translate(-10%, -50%); 
+    color: white; 
+    font-size: 40px; 
+    font-weight: bold; 
+    text-align: center;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8); 
+    background: linear-gradient(135deg, rgba(204, 206, 200, 0.7), rgba(186, 186, 178, 0.7)); 
+    border: 3px solid white; 
+    border-radius: 10px; 
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5); 
+    letter-spacing: 2px; 
+    text-transform: uppercase;
+    animation: glow 3s infinite alternate; 
+    margin-left: 100px;
+    width: 60%;
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(118, 22, 22, 0.8);
+    }
+    to {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 40px rgba(255, 0, 0, 1);
+    }
+}
+
+/*First*/
+.firstContent img {
+    margin-top: 120px;
+    width: 100%;
+}
+
+/*Second*/
+.secondContent {
+    width: 100%;
+    height: 500px;
+    background-color: #11284c;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.secondText-overlay  {
+    color: white;
+    font-size: 20px;
+    width: 55%;
+    margin: 0px 0px 0px 150px;
+}
+.secondText-overlay h5 {
+    color: white;
+    font-size: 25px;
+}
+
+.map-container p {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.map-container {
+    margin-top: 70px;
+    width: 30%;
+}
+
+iframe {
+    border: 0;
+    width: 80%;
+    height: 80%;
+}
+
+/*Third*/
+.thirdContent {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 200px;
+    gap: 100px;
+    margin-top: 10px;
+}
+
+.thirdText-overlay {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    width: 55%;
+    margin: 0px 0px 0px 150px;
+    width: 40%;
+    font-weight: bold;
+}
+
+.thirdText-overlay h5, .thirdText-overlay p {
+    margin: 25px; /* Remove default margin */
+}
+
+.thirdText-overlay h5 {
+    color:red;
+    font-size: 40px;
+}
+
+.sign {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    margin-top: 100px;
+}
+
+.sign-container {
+    background-color: #1a2a4d; 
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 520px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect */
+.sign-container:hover {
+    background-color: #6779b5; 
+    color: black;
+}
+
+.icon-sign {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    margin: 100px 0px 0px 0px;
+}
+
+.icon {
+    width: 200px;
+    height: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.2); 
+
+}
+
+/*Fourth*/
+.fourthContent {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 200px;
+    gap: 100px;
+    margin-top: 40px;
+}
+
+.fourthText-overlay {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    width: 55%;
+    margin: 70px 0px 0px 150px;
+    width: 40%;
+    font-weight: bold;
+}
+
+.fourthContent h5 {
+    color:red;
+    font-size: 40px;
+}
+
+.fourthText-overlay h5, .fourthText-overlay p {
+    margin: 25px; /
+}
+
+.qr-container img {
+    width: 250px;
+    height: 250px;
+    margin-top: 100px;
+    margin-left: 150px;
+    padding-bottom: 50px;
+}
+
+.qrLabel {
+    background-color: #1a2a4d; 
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 570px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect */
+.qrLabel:hover {
+    background-color: #6779b5; 
+    color: black;
+}
+
+/*Fifth*/
+.fifthContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #11284c; /* Ensure background applies correctly */
+    margin-top: 350px;
+}
+
+.fifthText-overlay {
+    color: white;
+    font-size: 20px;
+    width: 50%;
+    font-weight: bold;
+    margin-left: 150px;
+    margin-bottom: 50px;
+}
+
+.fifthText-overlay h5 {
+    color: red;
+    font-size: 40px;
+}
+
+.fifthText-overlay h5, .fifthText-overlay p {
+    margin: 35px; /* Remove default margin */
+}
+
+.fifthContent img {
+    width: 300px;
+    height: 300px; 
+    border-radius: 10px;
+    margin-right: 200px;
+}
+
+/*Sixth*/
+.sixthContent {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 200px;
+    gap: 100px;
+    margin: 80px 0px 0px 150px;
+}
+
+.sixthText-overlay {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    width: 55%;
+    width: 40%;
+    font-weight: bold;
+}
+
+.sixthText-overlay h5, .sixthText-overlay p {
+    margin: 25px; /* Remove default margin */
+}
+
+.sixthText-overlay h5 {
+    color:red;
+    font-size: 40px;
+}
+
+.sixthContent img {
+    width: 500px;
+    height: 300px;
+}
+
+/*Seventh*/
+.seventhContentHeader {
+    color:red;
+    font-size: 40px;
+    margin: 200px 0px 0px 150px;
+    width: 40%;
+    font-weight: bold;
+}
+
+.seventhContent {
+    display: flex;
+    flex-direction: row;
+    margin-left: 150px;
+    gap: 100px;
+}
+
+.seventhContent img {
+    width: 550px;
+    height: 300px;
+}
+
+/*footer*/
+.footerContainer {
+    width: 100%;
+    height: 300px;
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    gap: 250px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.footerContainer .info {
+    font-size: 25px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    margin-top: 50px;
+}
+
+.infoF1 {
+    font-size: 20px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    margin: 50px 0px 0px 150px;
+    width: 20%;
+}
+
+.infoF1 h5{
+    font-size: 25px;
+}
